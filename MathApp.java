@@ -18,7 +18,7 @@ public class MathApp {
   int lowestVechiclePrice =  Math.min(carPrice,truckPrice);
   double areaOfCircle= Math.PI*(circleRadius * circleRadius);
   double squareRoot = Math.sqrt(num1);
-  float distance = (float) Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2));
+  double distance = Math.hypot(x1-x2, y1-y2);
 
 
   }
