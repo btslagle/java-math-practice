@@ -2,12 +2,14 @@ public class MathApp {
 
   static int job1Salary = 51_000;
   static int job2Salary = 72_000;
-
   static int carPrice = 40_000;
   static int truckPrice = 120_000;
   static double circleRadius = 7.25;
   static double  num1 = 5.0;
-  
+  static int x1 = 5;
+  static int x2 = 10;
+  static int y1 = 85;
+  static int y2 = 90;
   public static void main(String[] args) {
     System.out.println("");
   }
@@ -16,6 +18,7 @@ public class MathApp {
   int lowestVechiclePrice =  Math.min(carPrice,truckPrice);
   double areaOfCircle= Math.PI*(circleRadius * circleRadius);
   double squareRoot = Math.sqrt(num1);
+  float distance = (float) Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2));
 
 
   }
