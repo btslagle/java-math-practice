@@ -6,22 +6,20 @@ public class MathApp {
   static int carPrice = 40_000;
   static int truckPrice = 120_000;
   static double circleRadius = 7.25;
+  static double  num1 = 5.0;
+  
   public static void main(String[] args) {
     System.out.println("");
   }
   
-  int findLargestSalary(){
-    return Math.max(job1Salary,job2Salary);  
+  int findLargestSalary= Math.max(job1Salary,job2Salary);  
+  int lowestVechiclePrice =  Math.min(carPrice,truckPrice);
+  double areaOfCircle= Math.PI*(circleRadius * circleRadius);
+  double squareRoot = Math.sqrt(num1);
+
+
   }
 
-  int lowestVechiclePrice(){
-    return Math.min(carPrice,truckPrice);
-  }
-  
-  double  areaOfCircle(){
-    return double.class; Math.PI(circleRadius * circleRadius);
-  }
-}
 
 //In `MathApp.java`, write methods for the following:
 
