@@ -1,12 +1,12 @@
 public class MathApp {
   public static void main(String[] args) {
-  MathApp.findLargestSalary(60_000.00,72_000.00);
-  MathApp.minCarPrice(40_000.00, 120_000.00);
-  MathApp.areaOfCircle(7.25);
-  MathApp.squareRoot(14);
-  MathApp.distance(5, 10, 85, 50);
-  MathApp.absoluteValue(-3.8);
-  MathApp.randomNumber();
+    MathApp.findLargestSalary(60_000.00,72_000.00);
+    MathApp.minCarPrice(40_000.00, 120_000.00);
+    MathApp.areaOfCircle(7.25);
+    MathApp.squareRoot(14);
+    MathApp.distance(5, 10, 85, 50);
+    MathApp.absoluteValue(-3.8);
+    MathApp.randomNumber();
   }
 
   private static void findLargestSalary(double job1Salary,double job2Salary){
