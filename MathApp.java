@@ -1,36 +1,35 @@
 public class MathApp {
-
-  static int job1Salary = 51_000;
-  static int job2Salary = 72_000;
-  static int carPrice = 40_000;
-  static int truckPrice = 120_000;
-  static double circleRadius = 7.25;
-  static double  num1 = 5.0;
-  static int x1 = 5;
-  static int x2 = 10;
-  static int y1 = 85;
-  static int y2 = 90;
   public static void main(String[] args) {
-    System.out.println("");
-  }
-  
-  int findLargestSalary= Math.max(job1Salary,job2Salary);  
-  int lowestVechiclePrice =  Math.min(carPrice,truckPrice);
-  double areaOfCircle= Math.PI*(circleRadius * circleRadius);
-  double squareRoot = Math.sqrt(num1);
-  double distance = Math.hypot(x1-x2, y1-y2);
-
-
+  MathApp.findLargestSalary(60_000.00,72_000.00);
+  MathApp.minCarPrice(40_000.00, 120_000.00);
+  MathApp.areaOfCircle(7.25);
+  MathApp.squareRoot(14);
+  MathApp.distance(5, 10, 85, 50);
+  MathApp.absoluteValue(-3.8);
+  MathApp.randomNumber();
   }
 
+  private static void findLargestSalary(double job1Salary,double job2Salary){
+    System.out.println(Math.max(job1Salary,job2Salary));
+  } 
+  private static void minCarPrice(double carPrice, double truckPrice){
+    System.out.println(Math.min(carPrice,truckPrice));
+  }
+  private static void areaOfCircle(double radius){
+    System.out.println( Math.PI * radius * radius);
+  }
+  private static void squareRoot(double num1){
+    System.out.println(Math.sqrt(num1));
+  } 
+  private static void distance(double x1, double x2, double y1, double y2){
+    System.out.println(Math.hypot(x1-x2, y1-y2));
+  }
+  private static void absoluteValue(double num2){
+    System.out.println(Math.abs(num2));
+  }
+  private static void randomNumber(){
+    System.out.println(Math.random());
+  }
 
-//In `MathApp.java`, write methods for the following:
+  }
 
-//1. Find and display the largest of two variables named `job1Salary` and `job2Salary` using `Math.max()`. Set the variables to any value you want.
-//2. Find and display the smallest of two variables named `carPrice` and `truckPrice`. Set the variables to any value you want.
-//3. Find and display the area of a circle whose radius is 7.25.
-//4. Find and display the square root the variable `num1` after it is set to `5.0`.
-//5. Find and display the distance between the points (5, 10) and (85, 50).
-//6. Find and display the absolute (positive) value of `num2` after it is set to `-3.8`.
-//7. Find and display a random number between 0 and 1.
-//
